@@ -7,6 +7,12 @@ typedef struct {
 } Siswa;
 
 int main () {
+    if (1) {
+
+    }
+    if (0) {
+        
+    }
     Siswa *budi = (Siswa*)malloc(sizeof(Siswa));
     strcpy(budi->name, "Budi");
     printf("%s\n", budi->name);

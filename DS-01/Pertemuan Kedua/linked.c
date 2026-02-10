@@ -17,7 +17,7 @@ Gerbong *pabrik(int penumpang) {
 }
 
 void print() {
-    if (!head) {
+    if (head == NULL) {
         printf("Gerbong tidak ada sama sekali!\n");
     } else {
         Gerbong *temp = head;
@@ -62,16 +62,47 @@ void putusDepan() {
     print();
 }
 
+void sambungBelakang(int penumpang) {
+    Gerbong *proto = pabrik(penumpang);
+    if (head == NULL) {
+        head = proto;
+    } else {
+        Gerbong *temp = head;
+        while (temp->next != NULL) {
+            temp = temp->next;
+        }
+        temp->next = proto;
+    }
+    print();
+}
+
+void putusBelakang() {
+    if (!head) {
+        printf("Tidak ada gerbong!\n");
+    } else if (head->next == NULL) {
+        free(head);
+        head = NULL;
+    } else {
+        Gerbong *temp = head;
+        while(temp->next->next != NULL) {
+            temp = temp->next;
+        }
+        Gerbong *hapus = temp->next;
+        temp->next = NULL;
+        free(hapus);
+    }
+    print();
+}
+
 
 int main () {
     print();
-    sambungDepan(10);
-    sambungDepan(200);
-    sambungDepan(300);
-    sambungDepan(2);
-    putusDepan();
-    putusDepan();
-    putusDepan();
-    putusDepan();
+    // sambungDepan(10);
+    // sambungDepan(200);
+    // sambungDepan(300);
+    // sambungDepan(2);
+    sambungBelakang(50);
+    sambungBelakang(75);
+    putusBelakang();
     return 0;
 }
