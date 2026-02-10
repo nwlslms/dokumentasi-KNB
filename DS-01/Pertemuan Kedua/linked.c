@@ -22,7 +22,6 @@ void print() {
     } else {
         Gerbong *temp = head;
         printf("Gerbong kereta: ");
-        //temp->next != NULL
         while(temp != NULL) {
             if (temp->next == NULL) {
                 printf("%d\n", temp->penumpang);
@@ -94,6 +93,51 @@ void putusBelakang() {
     print();
 }
 
+void push(int penumpang) {
+    if (!head) {
+        Gerbong *proto = pabrik(penumpang);
+        head = proto;
+    } else if (penumpang <= head->penumpang) {
+        sambungDepan(penumpang);
+    } else {
+        Gerbong *proto = pabrik(penumpang);
+        Gerbong *temp = head;
+        while(temp->next != NULL && temp->next->penumpang < penumpang) {
+            temp = temp->next;
+        }
+        proto->next = temp->next;
+        temp->next = proto;
+    }
+    print();
+}
+
+void pop(int penumpang) {
+    if (!head) {
+        printf("Tidak ada yang bisa diputus!\n");
+    } else if (head->penumpang == penumpang) {
+        if (head->next == NULL) {
+            free(head);
+            head = NULL;
+        } else {
+            Gerbong *hapus = head;
+            head = head->next;
+            free(hapus);
+        }
+    } else{
+        Gerbong *temp = head;
+        while(temp->next != NULL && temp->next->penumpang != penumpang) {
+            temp = temp->next;
+        }
+        if (!temp->next) {
+            printf("%d tidak ditemukan!\n", penumpang);
+        } else {
+            Gerbong *hapus = temp->next;
+            temp->next = hapus->next;
+            free(hapus);
+        }
+    }
+    print();
+}
 
 int main () {
     print();
@@ -101,8 +145,15 @@ int main () {
     // sambungDepan(200);
     // sambungDepan(300);
     // sambungDepan(2);
-    sambungBelakang(50);
-    sambungBelakang(75);
-    putusBelakang();
+    push(10);
+    push(8);
+    push(12);
+    push(11);
+    push(8);
+    push(9);
+    pop(50);
+    pop(12);
+    pop(8);
+    pop(8);
     return 0;
 }
