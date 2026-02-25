@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -12,9 +13,23 @@ Music *head = NULL;
 int totalSong = 0;
 
 Music *newMusic(const char *title) {
+    Music *new = (Music*)malloc(sizeof(Music));
+    strcpy(new->title, title);
+    new->next = NULL;
+    return new;
 }
 
 void addSong(const char *title) {
+    Music *new = newMusic(title);
+    if (!head) {
+        head = new;
+    } else {
+        Music *temp = head;
+        while (temp->next) {
+            temp = temp->next;
+        }
+        temp->next = new;
+    }
     totalSong++;
 }
 
@@ -22,9 +37,11 @@ void skipSong() {
     if(!head) {
         printf("You don't have any song on list!\n");
     } else {
+        Music *temp = head;
+        head = head->next;
+        free(temp);
         totalSong--;
     }
-
 }
 
 void removeSong(int idx) {
@@ -32,11 +49,18 @@ void removeSong(int idx) {
         printf("There's no song at your list!\n");
     } else if (idx == 0) {
         skipSong();
-    } else if (idx > totalSong) {
+    } else if (idx >= totalSong) {
         printf("Out of range!\n");
     } else {
-        while (temp->next && index < hapus) {
+        Music *temp = head;
+        int index = 1;
+        while (index < idx && temp->next) {
+            temp = temp->next;
+            index++;
         }
+        Music *dels = temp->next;
+        temp->next = dels->next;
+        free(dels);
         totalSong--;
     }
 }
@@ -87,12 +111,20 @@ int main () {
 void menu() {
     while(1) {
         char cmd;
-       
+        system("CLS");
+        print();
+        printf("=========================\n");
+        printf("1. Add Song\n");
+        printf("2. Remove Song\n"); 
+        printf("3. Skip Song\n");
+        printf("4. Exit\n");
+
         cmd = getch();
         switch(cmd) {
             case '1': add(); break;
             case '2': removes(); break;
             case '3': skips(); break;
+            case '4': return; break;
             default: break;
         }
     }
@@ -102,6 +134,8 @@ void add() {
     system("CLS");
     char song[21];
     printf("Title [20 Characters max!]: ");
+    scanf(" %[^\n]", song);
+    addSong(song);
     system("PAUSE");
 }
 
@@ -114,8 +148,13 @@ void removes() {
         printf("%d. %s\n", idx++, temp->title);
         temp = temp->next;
     }
+    printf("Pilih yang ingin di hapus: ");
+    scanf("%d", &cmd);
+    removeSong(cmd-1);
     system("PAUSE");
 }
+
 void skips() {
+    skipSong();
     system("PAUSE");
 }
