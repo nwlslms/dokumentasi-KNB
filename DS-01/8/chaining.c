@@ -103,6 +103,7 @@ int main () {
     insert(20);
     insert(14);
     insert(33);
+    insert(200);
     display();
     printf("Value %d ketemu di index ke %d\n", 14, search(33));
     display();
