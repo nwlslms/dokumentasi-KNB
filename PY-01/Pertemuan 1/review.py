@@ -1,0 +1,7 @@
+print("Kalkulator Kecil")
+a = int(input("Masukkan a: "))
+b = int(input("Masukkan b: "))
+print("%d + %d = %d" % (a, b, a + b), end=" ")
+nama = input("Nama kamu: ")
+print("Nama kamu adalah", end=' ')
+print(nama)

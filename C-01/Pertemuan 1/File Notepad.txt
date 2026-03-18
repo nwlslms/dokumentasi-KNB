@@ -1,0 +1,22 @@
+== C Language ==
+Perkenalan
+Variabel operator
+Kondisi
+Perulangan
+Fungsi
+Array dan Pointer
+Struct
+File Management
+
+- Kerangka Program C
+Include header file, Fungsi dan struct, fungsi main
+
+- Output
+printf("text");
+Baris baru = \n
+printf("%d", variable); = menampilkan nilai dalam variabel
+
+- Input
+Variabel
+scanf("%d", &variabel);
+

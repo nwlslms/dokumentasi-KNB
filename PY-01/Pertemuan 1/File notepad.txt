@@ -1,0 +1,59 @@
+== PYTHON ==
+BAHASA C & C++
+C++ = Object Oriented Programming
+
+//Struktur
+def main():
+    print("TEST")
+
+if __name__ == '__main__':
+    main()
+
+Sequence:
+Dari atas ke Bawah
+
+Komentar:
+#
+
+Input & Output:
+variabel = input("text")
+print("TEXT")
+
+Variabel:
+Integer: Bilangan Bulat
+Float: Bilangan decimal
+Character: 1 karakter
+String: kumpulan dari karakter / kata / kalimat
+Boolean: Logika 1 / 0 ^ True / False ^ On / Off
+
+List, Tuple, Dictionary:
+List = []
+Tuple = ()
+Dictionary = {Key:Value}
+
+== Operator ==
+/:
+//:
+%:
+10 mod 7: 3
+15 mod 7: 1
+#
+
+
+Logika:
+OR
+1 || 1 = 1
+1 || 0 = 1
+0 || 1 = 1
+0 || 0 = 0
+Dua 0 untuk 0
+AND
+1 && 1 = 1
+1 && 0 = 0
+0 && 1 = 0
+0 && 0 = 0
+Cukup satu salah, salah
+NOT
+!1 = 0
+!0 = 1
+Putar nilai

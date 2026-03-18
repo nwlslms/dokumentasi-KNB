@@ -1,0 +1,41 @@
+== Struktur Data ==
+Review: C Struct & Pointer
+List: Single & Double Linked List
+Queue & Stack
+Tree / AVL
+Graph
+Kelas:
+Selasa - Jumat - Sabtu - Minggu
+
+== Review ==
+Pointer hanya menerima alamat
+
+Pointer
+Pointer sederajat
+Pointer to pointer (double)
+
+== Struct ==
+Pengertian: Tipe data buatan, berisi tipe data identik
+
+Deklarasi: struct, typedef
+
+Statis dan Dinamis
+Statis = objek umum, array statis biasa;
+. (dot operator)
+
+malloc = Memory Allocation
+TipeData *pointer = (TipeData*)malloc(sizeof(TipeData))
+
+free(pointer);
+
+Fungsi malloc bakal mengalokasikan memori di computer, kemudian ditunjuk oleh pointer
+
+Dinamis = Ponter, alokasi objek.
+-> (arrow operator) kita mewakilkan sesuatu
+
+== Linked List ==
+Disimpan secara heap
+
+Mirip array
+
+Sambung menyambung

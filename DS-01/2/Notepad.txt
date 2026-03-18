@@ -1,0 +1,15 @@
+== Struck Dinamis ==
+Kapan kita menggunakan Arrow?
+Ketika kita menunjuk suatu struct.
+Dinamis struct variable
+Array struct ke struct
+
+== Linked List ==
+Mirip array
+Disimpan di stack
+
+*createNode = buat alokasi Node di memory
+push = Fungsi insert
+pop = Fungsi pop
+search = besok
+

@@ -1,0 +1,32 @@
+== Struktur Kondisi ==
+If condition
+
+if
+Kalau terpenuhi, maka lakukan
+if (condition) {
+	Pekerjaan
+}
+
+if-else
+Kalau terpenuhi, maka lakukan, tapi kalau engga, maka lakukan
+if (condition) {
+
+} else {
+
+}
+
+if-else if-else
+Kalau ini terpenuhi, maka lakukan, tapi kalau engga,kalau yang ini terpenuhi, maka lakukan yang ini, tapi kalau enggak semua, maka lakukan yang terakhir
+
+Nested if
+If yang bersarang
+
+== Switch ==
+Saklar / Tombol
+
+switch(data) {
+	case x: lakukan; break;
+	case y: lakukan; break;
+	...
+	default: break;
+}
