@@ -44,14 +44,14 @@ int main() {
     }
 
     while (head && head->next) {
-        Node *first = head;
-        Node *second = head->next;
-        int a = first->berat;
-        int b = second->berat;
+        Node *T = head;
+        Node *R = head->next;
+        int a = T->berat;
+        int b = R->berat;
 
-        head = second->next;
-        free(first);
-        free(second);
+        head = R->next;
+        free(T);
+        free(R);
 
         if (a != b) {
             int diff = a - b; 

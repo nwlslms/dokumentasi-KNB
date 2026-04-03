@@ -1,29 +1,3 @@
-== Variabel ==
-Penyimpan suatu nilai
-1. Bilangan
-a. Desimal = float, double
-b. Bulat = short, int, long
-2. Karakter
-a. karakter = char, char[]
-3. Logika
-a. Bilangan = short
-
-Input & Output
-printf("");
-scanf("");
-
-== Type Casting ==
-(TipeData) data
-
-
-== Operator ==
-0. Assignment
-Operator: =, -=, *=, /=, %=
-1. Aritmatik
-Operator: +, -, *, /
-2. Komparasi
-Operator: >, <, >=, <=, ==, !=
-3. Logika
-NOT, AND, OR: !, ||, &&
-4. Bitwise
-<<, >>, ~, ^, &, |
+strcmp('a', 'c') = -1
+strcmp('a', 'a') = 0
+strcmp('c', 'a') = 1

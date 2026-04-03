@@ -24,7 +24,7 @@ If yang bersarang
 == Switch ==
 Saklar / Tombol
 
-switch(data) {
+switch(yang mau dicek) {
 	case x: lakukan; break;
 	case y: lakukan; break;
 	...

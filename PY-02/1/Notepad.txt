@@ -1,0 +1,81 @@
+== PY-02 ==
+Sesi: 75 Menit
+Senin: 19.30
+Jumat: 18.30
+Sabtu: 10.00
+Recording: ON
+
+DASAR
+Library = NumPy, datas
+Algoritma = 
+
+Output:
+Bisa baca, bisa nulis, bisa programming console app.
+
+== Python ==
+Programming language = OOP (Object Oriented Programming) Kelas dan Objek.
+
+CPP
+
+PROS: Bahasa paling manusiawi
+CONS: Proses berat
+
+Struktur program
+Input & Output
+Variabel
+Perulangan
+Percabangan
+Fungsi
+
+Class & Object
+- Polymorph
+- Inherite
+- Child
+
+== Dasar ==
+Sequential: Berurutan
+Modular: Paket - paket
+
+Dari atas ke bawah
+Kebab
+Nasi Goreng
+Nasi Ayam
+Aqua
+Taro
+
+
+Eksekusi paket yang mau dipanggil
+Nasi Goreng
+Aqua
+
+== Fundamental ==
+Input: User memasukkan data ke komputer
+Output: Yang ditampilkan dari computer ke user
+
+Variabel: Sebutan lain untuk suatu nilai, tempat menyimpan data
+
+Bilangan
+Bulat: -1, -2, -4, -3, ... 1, 2
+Desimal: 1,0; 1,6; ... floating point
+
+Karakter
+char: A, B, C, D, SEMUA YANG ADA DI ASCII
+string: Kumpulan char. Kata / kalimat (ex: Komunitas)
+
+Logika
+bool: 1, 0; True, false; ON / OFF;
+
+C/C++
+int a = 10;
+float phi = 3.14;
+
+char karakter = 'A';
+string kata = "Ayam";
+
+bool logika: 1/true;
+
+Python
+a = datanya
+
+== Next Session ==
+Bahas input, output, variable, tipe data
