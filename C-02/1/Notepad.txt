@@ -1,0 +1,75 @@
+== C-02 ==
+Sesi: 3x/minggu
+Durasi: >= 75 Menit
+Hari: Minggu 19.00, Senin 21.00, Kamis 21.00
+Recording: ON
+
+== Course Outline ==
+Output: Baca, tulis, coding, buat program console.
+Algoritma X
+
+C Language
+
+Pengantar
+Struktur kode
+Input, output
+Variabel, tipe data
+Percabangan
+Perulangan
+
+Inti
+Array
+Fungsi
+Pointer
+Struct
+I/O File
+
+== Instalasi ==
+MinGW
+VS Code
+
+
+== Struktur Program ==
+- Include Library yang dibutuhkan
+- Fungsi dan struct declare
+- Fungsi main (Pertama kali kode dieksekusi)
+
+Karakter:
+Kebab
+Ayam
+Nasi Goreng
+ 
+Sequential
+Kebab, Ayam, Nasi Goreng
+
+Modular / paket
+Ayam, Kebab
+
+== Input & Output ==
+Input = memasukkan data ke computer <-> Variabel
+Output = Menampilkan data dari computer ke user
+
+== Variabel & Tipe Data ==
+Variabel = nama tipe data
+
+Tipe data
+Bilangan
+Bulat: Integer (int), Short (short), long (long)
+decimal: Float (float), Double (double) -> tingkat presisi koma
+
+Karakter
+Karakter: Character (char) ASCII
+Kata: Kumpulan Character (char [n + 1])
+
+Logika
+Boolean: int
+1/0, True/False, ON/OFF
+
+TipeData namaVariabel; 
+Gak boleh spasi
+Gak boleh diawali angka
+
+Camel
+
+== Next Session ==
+Constrain Tipe Data, Input - output
