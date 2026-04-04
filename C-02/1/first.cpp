@@ -1,11 +1,12 @@
-#include <stdio.h> //Input & Output
+#include <iostream> //Input & Output
 
 /*Fungsi dan struct*/
-
+using namespace std;
 //
 
 int main () {
-	printf("Hello World!\n");
-	printf("Halo dunia\n");
+	for(int i = 0; i < 10; i++) {
+        cout << "Perulangan ke - " << i << endl;
+    }
 	return 0;
 }
