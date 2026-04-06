@@ -10,7 +10,6 @@
 
 - [ ] Operator
 
-
 - [ ] If condition (Program Control)
 
 > Next Session
