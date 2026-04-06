@@ -1,0 +1,151 @@
+== Review ==
+Struktur kode Bahasa:
+- Include library #include
+- Deklarasi fungsi yang diperlukan
+- int main() {} kode pertama kali dieksekusi
+
+Input - output dasar:
+- printf(), scanf();
+
+Variabel:
+- Camel jumlahSiswa;
+
+== Pengantar ==
+Plain text -> Compiling & Build -> exe
+
+== Course Outline ==
+- Tipe data & variable
+- Formatting di dalam printf() dan scanf()
+
+== Materi ==
+-> Tipe Data
+1. Bilangan bulat
+- short
+  Dipakai: Unit rumah di komplek, berapa kali makan sehari, umur, berapa jam
+  Rentang data: -32768 s/d 32767
+  Ukuran: 2 byte
+
+  short namaVariabel;
+
+- int
+  Dipakai: Kalkulator mini, Jumlah kendaraan selama arus mudik
+  Rentang data: -2,147,483,648 s/d 2,147,483,647
+  Ukuran: 4 byte
+
+  int namaVariabel;
+
+- long
+  Rentang data:
+	Sama seperti integer (int) di Windows  
+	Sama seperti long long di Linux/Mac
+  long namaVariabel;
+
+- long long
+  Dipakai: faktorial
+  Rentang data: -9223372036854774808 s/d 9223372036854774807
+  Ukuran: 8 Byte
+
+  long long namaVariabel;
+
+- unsigned short, int, long, long long
+  Dipakai: kuantitas
+  Rentang data: 0 - ~65000, 0 - 4milyar, 0 - 18 gak tau berapa;
+
+2. Desimal
+   Tergantung tingkat presisi
+-  Float
+   Presisi digit: 6-7 digit
+   Ukuran = 4 byte
+   
+   float namaVariabel;
+
+-  Double
+   Presisi digit: 14-16 digit
+   Ukuran = 8 byte
+
+   double namaVariabel;
+
+-  Long double
+   Presisi digit: 18-20 digit
+   Ukuran: = 8, 12, 16 byte
+   
+   long double namaVariabel;
+
+3. Karakter
+-  char
+   Rentang = -128 s/d 127
+   Ukuran: 1 byte
+   
+   char namaVariabel;
+
+-  char [] (array of character = string)
+   Contoh: NIM XXXXXX
+   Rentang = -127 s/d 127
+   Ukuran: 1 * n + 1;
+   string namaVariabel;
+   
+   Array = Tipe data yang serupa
+   char namaVariabel[n+1];
+
+4. Logika
+   short namaVariabel;
+   1 / 0; TRUE / FALSE; ON / OFF;
+   Ukuran: 2 byte (short)
+
+-> Output
+   printf("Text %d", variabel);
+   Format specifier
+   %[flags][width][.precision][length][specifier]
+   
+   int main () {
+   
+   }
+
+   [Specifier]
+   int = %d
+   short = %hd
+   long = %ld
+   long long = %lld
+   float = %f
+   double = %lf
+   long double = %Lf
+   char = %c
+   char[] = %s
+
+   Escape Sequence Character
+   \n = new Line
+   \t = tab
+   \\ = \
+   \" = "
+   \' = '
+
+   [Flags]
+- (-) Rata Kiri
+- (+) Untuk nampilin + pada integer
+- (0) Nampilin 0 dibagian yang belom keisi
+  
+   [Width]
+   Cell output
+   {Length}
+   Ngubah ke tipe data
+
+   [.precision]
+   Mau nampoil
+
+-> Input
+   Specifier & Nampung data
+Specifier:
+   int = %d
+   short = %hd
+   long = %ld
+   long long = %lld
+   float = %f
+   double = %lf
+   long double = %Lf
+   char = %c
+   char[] = %s (catatan)
+
+Buffer spasi
+
+== Next Session ==
+Review, operator, if-condition

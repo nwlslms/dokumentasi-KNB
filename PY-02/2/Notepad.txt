@@ -1,0 +1,57 @@
+== Course Outline ==
+1. Input
+2. Output
+3. Tipe Data Python
+
+== Input ==
+Data yang disimpan adalah string
+
+Typecasting: Merubah dari tipe data ke tipe data yang lain
+
+== Output ==
+%d = integer (bilangan bulat)
+%f = float (decimal)
+%s = string
+
+end='' karakter di akhir baris
+
+== Variabel & Tipe Data ==
+int = integer / bilangan bulat
+Kalau masuk decimal, bakal floor(pembulatan ke Bawah)
+
+float = float / decimal
+
+str = string/character
+
+Type casting: Merubah tipe data ke bentuk yang lain
+
+-> Section Array
+Array = kumpulan data yang serupa
+nama_siswa1 = "harits"
+nama_siswa2 = "thoriq"
+nama_siswa = {harits, thoriq}
+
+List, tuple, dictionary, set
+
+List = daftar = Array
+
+int data[];
+Karakteristik: Dinamis, menampung segala bentuk tipe data
+list = []
+#Akses index dari kiri 0
+#Akses index dari kanan -1
+
+
+Tuple ()
+Karakteristik: Paten, Konstan, menampung segala bentuk tipe data.
+
+Dictionary {}
+Karakteristik: Key : Value, menampung segala bentuk tipe data.
+You : Kamu
+
+Set set([])
+Tuple yang dikompres
+Karakteristik: Konstan, tidak ada nilai ganda
+
+== Next Session ==
+Materi: Operator, if condition
