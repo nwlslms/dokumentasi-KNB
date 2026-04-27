@@ -90,3 +90,4 @@
             printf("%p", pointer);
         ```
 > Next Session
+Array & Pointer
