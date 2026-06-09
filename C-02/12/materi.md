@@ -9,7 +9,7 @@
         printf("%d", *ptr);
     ```
 > Main Course
-- [ ] Function
+- [x] Function
     ```aritmatika(x, y): 12x - 12y```
     `aritmatika`: Nama fungsi
     `(x, y)`: Parameter
