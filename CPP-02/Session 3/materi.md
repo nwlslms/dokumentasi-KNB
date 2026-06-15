@@ -40,7 +40,7 @@
             cin.ignore();
             cin >> nama;
         ```
-- [ ] Output
+- [x] Output
     - `cout << Text`
         ```cpp
             int a = 10, b = 12;
@@ -51,16 +51,18 @@
         - `\n`: Newline
         - `\t`: Karakter tab
     
-- [ ] Data Types
+- [x] Data Types
     - Unsigned
         Rentang data dimulai dari 0.
+        
 ---
 
 > Main Course
 
+Proses pembuatan program
+File -> Compile -> Bahasa Mesin -> Build -> Program
+
 ---
+
 > Next Session
-
-
----
-> If condition
+> Operator
