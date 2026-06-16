@@ -1,0 +1,10 @@
+a = int(input("Masukkan a: "))
+b = int(input("Masukkan b: "))
+
+print(f"{a} + {b} = {a + b}")
+print(f"{a} - {b} = {a - b}")
+print(f"{a} * {b} = {a * b}")
+print(f"{a} / {b} = {a / b}")
+print(f"{a} // {b} == {a // b}")
+print(f"{a} % {b} == {a % b}")
+print(f"{a} ** {b} == {a ** b}")
