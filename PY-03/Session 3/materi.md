@@ -77,7 +77,7 @@
         |Or|`or`|1 or 0|Satu benar, semua benar|
         |Not|`not`|not 1|Membalik nilai kebenaran|
 
-- [ ] If-condition
+- [x] If-condition
     Struktur kontrol program
     - if
         ```py
