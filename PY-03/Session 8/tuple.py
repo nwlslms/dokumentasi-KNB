@@ -9,7 +9,7 @@ print(konstanta)
 
 tambah = (1000, 10000)
 
-konstanta += tambah
+konstanta = konstanta + tambah
 print(konstanta)
 
 for i in range(len(konstanta)):

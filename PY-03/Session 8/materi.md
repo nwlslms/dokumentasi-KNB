@@ -1,6 +1,6 @@
 # PY-03: Session 8
 > Review
-- [ ] Loop
+- [x] Loop
 	- For loop
 	- While loop
 > Main Course
@@ -70,7 +70,7 @@
 	- Copy
 		Gabungan list dan update tuple
 
-- [ ] Dictionary
+- [x] Dictionary
 	Urut, bisa diubah, tidak boleh ada yang sama
 	```py
 	kamus = {
@@ -86,10 +86,10 @@
 		- `.update({key:value})`
 		- `dict[Key] = Value`
 	- Delete
-		- `.pop(Key)`
-		- `.popitem()`
-		- `del dict`
-		- `.clear()`
+		- `.pop(Key)` = Hapus berdasarkan Key
+		- `.popitem()` = Hapus Key dan Value terakhir
+		- `del dict` = Menghapus sampai memori
+		- `.clear()` = Mengosongkan dictionary
 	- Trace
 		- Trace key
 			- `.keys()`
@@ -102,7 +102,7 @@
 	- Copy
 		= `.copy()`
 
-- [ ] Nested list, tuple, and dictionary
+- [x] Nested list, tuple, and dictionary
 	- List
 		```py
 		list = [
@@ -148,4 +148,4 @@
 				print(subkey, subval)
 		```
 > Next Session
-
+> Review
