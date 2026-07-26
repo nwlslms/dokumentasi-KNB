@@ -1,0 +1,7 @@
+0;Makan malam
+1;Mengaji
+0;Bersih-bersih rumah
+1;Nyuci mobil
+1;Belanja kebutuhan
+0;Bersih rumah
+0;Baca buku
