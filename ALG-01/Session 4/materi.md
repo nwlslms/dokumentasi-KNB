@@ -49,7 +49,50 @@
         Kolom output ada berapa.
     - Presisi
         Berapa digit / karakter yang ingin ditampilkan.
-        
-> Main Course
 
+> Main Course
+- [x] Swap
+    Before:
+    |A|B|
+    |:-:|:-:|
+    |12|30|
+
+    Process:
+    A = B
+    |A|B|
+    |:-:|:-:|
+    |30|30|
+
+    B = A
+    |A|B|
+    |:-:|:-:|
+    |30|30|
+
+    ---
+    temp = A
+    |A|B|temp|
+    |:-:|:-:|:-:|
+    |12|30|12|
+
+    A = B
+    |A|B|temp|
+    |:-:|:-:|:-:|
+    |30|30|12|
+
+    B = temp
+    |A|B|temp|
+    |:-:|:-:|:-:|
+    |30|12|12|
+
+    After
+    |A|B|
+    |:-:|:-:|
+    |30|12|
+
+- [ ] Konversi
+    - Typecasting
+        ```cpp
+        TipeData awal;
+        TipeData akhir = (TipeData)awal;
+        ```
 > Next Session
